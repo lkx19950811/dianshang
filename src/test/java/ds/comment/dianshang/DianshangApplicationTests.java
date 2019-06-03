@@ -40,6 +40,9 @@ public class DianshangApplicationTests {
         commentRepository.save(comment);
     }
 
+    /**
+     * 刷评论
+     */
     @Test
     public void EchsopComment() {
         startDate = "2019-04-15";
@@ -53,6 +56,9 @@ public class DianshangApplicationTests {
         logger.info("完成了{} 条", num);
     }
 
+    /**
+     * 修正所有评论时间
+     */
     @Test
     public void FixCommentTime() {
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
